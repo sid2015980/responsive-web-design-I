@@ -146,13 +146,16 @@ h5 {
   margin-bottom: 15px;
 }
 
+
+
+
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* VVVVcss code for index page hereVVVV */
 .container {
   width: 880px;
   margin: auto;
 }
-
 
 
 .home{
@@ -208,22 +211,30 @@ footer h4 {
 .innovationcta img{
     display:none;
 }
+section .leftText{
+justify-content: center;
+align-content: center;
+align-items: center; 
+width:80%;}
+
+.first{
+width:100%;
+}
+.home{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .home nav{
- width:80%;
+ width:100%;
  display:flex;
+ justify-content: center;
  flex-wrap:wrap-reverse;
 }
 header nav .logo{
 display: flex;
-align-items: center;
-align-content: center;
-padding-bottom: 20px;
-justify-content: center;
+padding-bottom: 30px;
 }
-  }
-
-/* MOBILE VIEW*/
-  @media (max-width: 500px){
-
-
   }
