@@ -259,7 +259,7 @@ padding-right: 5%;
 margin-top: -40px;
 }
 .first .topText .features{
-    padding-right: 20px;
+    padding-right: 4%;
 }
 .second{
     display:flex;
@@ -270,10 +270,10 @@ margin-top: -40px;
     margin-top: -20px;
     }
     .second .bottomText .services{
-    padding-right:20px;
+    padding-right:4%;
     }
     .second .bottomText .product{
-        padding-right:20px;
+        padding-right:4%;
         }
   footer .contactFoot{
     padding-left: 5%;
