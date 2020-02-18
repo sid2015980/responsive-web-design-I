@@ -149,21 +149,15 @@ h5 {
 }
 
 
-
-
-
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* VVVVcss code for index page hereVVVV */
 .container { /*This gives the desktop view a width and auto margin*/
   width: 880px;
   margin: auto;
 }
-
-
 .home{
   margin-bottom: 70px;
 }
-
 header nav {
   width: 100%;
   display: flex;
@@ -171,7 +165,6 @@ header nav {
   margin-top: 40px;
   align-items: center;
 }
-
 .innovationcta {
   display: flex;
   flex-direction: row;
@@ -182,8 +175,7 @@ header nav {
   justify-content: center;
   align-items: center;
 }
-
-.first .topText {
+.wrapper .topText {
   border-top: 1px solid black;
   display: flex;
   width: 100%;
@@ -192,8 +184,7 @@ header nav {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-.second .bottomText {
+.wrapper .bottomText {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -201,12 +192,10 @@ header nav {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 footer h4 {
   margin-top: 50px;
   margin-bottom: 40px;
 }
-
 
 /*TABLET VIEW*********************************************/
   @media (max-width: 800px){
@@ -217,12 +206,6 @@ footer h4 {
     display: flex;
     width:90%;
 }
-.home{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
 .home nav{
  width:100%;
  display:flex;
@@ -230,7 +213,6 @@ footer h4 {
  flex-wrap:wrap-reverse;
 }
 .logo{
-display: flex;
 padding-bottom: 30px;
 }
 .links{
@@ -256,23 +238,18 @@ section{
     display:flex;
     padding:1% 0;
 }
-.first{
+.wrapper{
 display:flex;
 justify-content: space-evenly;
 width:100%;
 }
-.first .topText .features{
+.wrapper .topText .features{
     padding-right: 4%;
 }
-.second{
-    display:flex;
-    justify-content: space-evenly;
-    width:100%;
-    }
-    .second .bottomText .services{
+    .wrapper .bottomText .services{
     padding-right:4%;
     }
-    .second .bottomText .product{
+    .wrapper .bottomText .product{
         padding-right:4%;
         }
   footer .contactFoot h4{
