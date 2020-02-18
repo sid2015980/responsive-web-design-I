@@ -315,6 +315,8 @@ footer h4 {
     width: 100%;
     margin-top: -8%;
     margin-bottom: -8%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   section {
     display: flex;
@@ -327,6 +329,8 @@ footer h4 {
     align-content: center;
     justify-content: space-around;
     width: 100%;
+    margin-left: 5%;
+    margin-right:5%;
   }
   .wrapper .bottomText {
     display: flex;
@@ -335,6 +339,8 @@ footer h4 {
     align-content: center;
     justify-content: space-around;
     width: 100%;
+    margin-left: 5%;
+    margin-right:5%;
   }
   .wrapper .topText .features {
     padding-bottom: 4%;
@@ -344,6 +350,9 @@ footer h4 {
   }
   .wrapper .bottomText .product {
     padding-bottom: 4%;
+  }
+  footer{
+    margin-left: 5%;
   }
   footer .contactFoot h4 {
     margin-bottom: 15px;
