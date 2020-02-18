@@ -127,7 +127,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  max-width:100%;
+  max-width: 100%;
 }
 
 html,
@@ -135,7 +135,7 @@ body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
   display: flex; /*This gives the entire body a display oof flex and allows to center everything*/
-  justify-content: center;/*This centers the enitre body of content*/
+  justify-content: center; /*This centers the enitre body of content*/
 }
 
 h1,
@@ -148,14 +148,14 @@ h5 {
   margin-bottom: 15px;
 }
 
-
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* VVVVcss code for index page hereVVVV */
-.container { /*This gives the desktop view a width and auto margin*/
+.container {
+  /*This gives the desktop view a width and auto margin*/
   width: 880px;
   margin: auto;
 }
-.home{
+.home {
   margin-bottom: 70px;
 }
 header nav {
@@ -198,62 +198,157 @@ footer h4 {
 }
 
 /*TABLET VIEW*********************************************/
-  @media (max-width: 800px){
-.innovationcta img{
-    display:none;
-}
-.container{ /*This gives the tablet view 90% width adding margin to left and right sides. so much easier than hardcoding each section's margin*/
+@media (max-width: 800px) {
+  .innovationcta img {
+    display: none;
+  }
+  .container {
+    /*This gives the tablet view 90% width adding margin to left and right sides. so much easier than hardcoding each section's margin*/
     display: flex;
-    width:90%;
-}
-.home nav{
- width:100%;
- display:flex;
- justify-content: center;
- flex-wrap:wrap-reverse;
-}
-.logo{
-padding-bottom: 30px;
-}
-.links{
-display: flex;
-justify-content: space-between;
-width:100%;
-}
-section .leftText{
-display:flex;
-justify-content: center; 
-}
-.innovationcta .leftText button{
-background-color: transparent;
-width:60%;
-height:30px;
-border: 1px solid black;
-}
-.middle-img{
+    width: 90%;
+  }
+  .home nav {
+    width: 100%;
     display: flex;
-    width:100%;
-}
-section{
-    display:flex;
-    padding:1% 0;
-}
-.wrapper{
-display:flex;
-justify-content: space-evenly;
-width:100%;
-}
-.wrapper .topText .features{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .logo {
+    padding-bottom: 30px;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section .leftText {
+    display: flex;
+    justify-content: center;
+  }
+  .innovationcta .leftText button {
+    background-color: transparent;
+    width: 60%;
+    height: 30px;
+    border: 1px solid black;
+  }
+  .middle-img {
+    display: flex;
+    width: 100%;
+  }
+  section {
+    display: flex;
+    padding: 1% 0;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .wrapper .topText .features {
     padding-right: 4%;
-}
-    .wrapper .bottomText .services{
-    padding-right:4%;
-    }
-    .wrapper .bottomText .product{
-        padding-right:4%;
-        }
-  footer .contactFoot h4{
-    margin-bottom:15px;
+  }
+  .wrapper .bottomText .services {
+    padding-right: 4%;
+  }
+  .wrapper .bottomText .product {
+    padding-right: 4%;
+  }
+  footer .contactFoot h4 {
+    margin-bottom: 15px;
   }
 }
 /* END OF TABLET VIEW CSS ***********************/
+
+/*MOBILE VIEW*********************************************/
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    width: 100%;
+  }
+
+  .logo {
+    padding-bottom: 10%;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .links a{
+    padding-left: 10%;
+  }
+.services{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  width:100%;
+}
+.products{
+  border-bottom: 1px solid black;
+}
+.vision{
+  border-bottom: 1px solid black;
+}
+.features{
+  border-bottom: 1px solid black;
+}
+.about{
+  border-bottom: 1px solid black;
+}
+.contact{
+  border-bottom: 1px solid black;
+  padding-right: 57px;
+}
+  section .leftText {
+    display: flex;
+    justify-content: center;
+  }
+  .innovationcta .leftText button {
+    background-color: transparent;
+    width: 60%;
+    height: 30px;
+    border: 1px solid black;
+  }
+  .middle-img {
+    display: flex;
+    width: 100%;
+    margin-top: -8%;
+    margin-bottom: -8%;
+  }
+  section {
+    display: flex;
+    padding: 1% 0;
+  }
+  .wrapper .topText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .wrapper .bottomText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .wrapper .topText .features {
+    padding-bottom: 4%;
+  }
+  .wrapper .bottomText .services {
+    padding-bottom: 4%;
+  }
+  .wrapper .bottomText .product {
+    padding-bottom: 4%;
+  }
+  footer .contactFoot h4 {
+    margin-bottom: 15px;
+  }
+  footer p {
+    margin-top: 2%;
+  }
+}
