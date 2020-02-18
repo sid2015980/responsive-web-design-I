@@ -279,28 +279,42 @@ footer h4 {
   .links a{
     padding-left: 10%;
   }
-.services{
+.a-services{
   border-bottom: 1px solid black;
   border-top: 1px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
   width:100%;
 }
-.products{
+.a-products{
   border-bottom: 1px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.vision{
+.a-vision{
   border-bottom: 1px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.features{
+.a-features{
   border-bottom: 1px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.about{
+.a-about{
   border-bottom: 1px solid black;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
-.contact{
+.a-contact{
   border-bottom: 1px solid black;
   padding-right: 57px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
   section .leftText {
+    margin-top: -10%;
+    margin-bottom: -10%;
     display: flex;
     justify-content: center;
   }
@@ -343,6 +357,7 @@ footer h4 {
     margin-right:5%;
   }
   .wrapper .topText .features {
+    margin-top: -5%;
     padding-bottom: 4%;
   }
   .wrapper .bottomText .services {
@@ -350,6 +365,9 @@ footer h4 {
   }
   .wrapper .bottomText .product {
     padding-bottom: 4%;
+  }
+  .wrapper .bottomText .vision{
+    margin-bottom: -5%;
   }
   footer{
     margin-left: 5%;
