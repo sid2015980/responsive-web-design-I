@@ -127,6 +127,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width:100%;
 }
 
 html,
@@ -151,6 +152,8 @@ h5 {
   width: 880px;
   margin: auto;
 }
+
+
 
 .home{
   margin-bottom: 70px;
@@ -199,3 +202,28 @@ footer h4 {
   margin-bottom: 40px;
 }
 
+
+/*TABLET VIEW*/
+  @media (max-width: 800px){
+.innovationcta img{
+    display:none;
+}
+.home nav{
+ width:80%;
+ display:flex;
+ flex-wrap:wrap-reverse;
+}
+header nav .logo{
+display: flex;
+align-items: center;
+align-content: center;
+padding-bottom: 20px;
+justify-content: center;
+}
+  }
+
+/* MOBILE VIEW*/
+  @media (max-width: 500px){
+
+
+  }
