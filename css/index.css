@@ -134,6 +134,8 @@ html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  display: flex; /*This gives the entire body a display oof flex and allows to center everything*/
+  justify-content: center;/*This centers the enitre body of content*/
 }
 
 h1,
@@ -152,7 +154,7 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 /* VVVVcss code for index page hereVVVV */
-.container {
+.container { /*This gives the desktop view a width and auto margin*/
   width: 880px;
   margin: auto;
 }
@@ -211,6 +213,10 @@ footer h4 {
 .innovationcta img{
     display:none;
 }
+.container{ /*This gives the tablet view 90% width adding margin to left and right sides. so much easier than hardcoding each section's margin*/
+    display: flex;
+    width:90%;
+}
 .home{
     display: flex;
     align-content: center;
@@ -223,15 +229,13 @@ footer h4 {
  justify-content: center;
  flex-wrap:wrap-reverse;
 }
-header nav .logo{
+.logo{
 display: flex;
 padding-bottom: 30px;
 }
-.home .navLinks .links{
+.links{
 display: flex;
 justify-content: space-between;
-padding-left: 5%;
-padding-right: 5%;
 width:100%;
 }
 section .leftText{
@@ -247,27 +251,23 @@ border: 1px solid black;
 .middle-img{
     display: flex;
     width:100%;
-    padding-right: 5%;
-    padding-left: 5%;
+}
+section{
+    display:flex;
+    padding:1% 0;
 }
 .first{
 display:flex;
 justify-content: space-evenly;
 width:100%;
-padding-left: 5%;
-padding-right: 5%;
-margin-top: -40px;
 }
 .first .topText .features{
     padding-right: 4%;
 }
 .second{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width:100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: -20px;
     }
     .second .bottomText .services{
     padding-right:4%;
@@ -275,9 +275,6 @@ margin-top: -40px;
     .second .bottomText .product{
         padding-right:4%;
         }
-  footer .contactFoot{
-    padding-left: 5%;
-  }
   footer .contactFoot h4{
     margin-bottom:15px;
   }
